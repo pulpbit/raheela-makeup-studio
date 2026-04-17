@@ -3,222 +3,334 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rahila Makeup Studio | Bridal &amp; Party Makeup Artist in Mumbra Thane</title>
+  <title>Rahila Makeup Studio | Bridal & Party Makeup Artist in Mumbra Thane</title>
   <meta name="description" content="Rahila Makeup Studio offers luxury bridal, party, and engagement makeup in Mumbra Thane. Premium products, elegant looks, and on-location services." />
   <meta name="keywords" content="Rahila Makeup Studio, bridal makeup Mumbra, party makeup Thane, engagement makeup artist, luxury makeup artist Mumbai" />
-  <meta property="og:title" content="Rahila Makeup Studio | Luxury Bridal &amp; Party Makeup" />
+  <meta property="og:title" content="Rahila Makeup Studio | Luxury Bridal & Party Makeup" />
   <meta property="og:description" content="Enhancing your natural beauty with premium bridal and party makeup services in Mumbra, Thane." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/images/hero.jpg" />
-  <meta property="og:url" content="https://rahila-makeup-studio.example.com/" />
   <link rel="icon" href="assets/images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="top-nav" id="top">
-    <div class="nav-logo">
-      <img src="assets/images/logo.png" alt="Rahila Makeup Studio logo" loading="lazy">
-      <span>Rahila Makeup Studio</span>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Rahila Makeup Studio" />
+          <span class="logo-text">Rahila Makeup Studio</span>
+        </a>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="header-cta">
+            <a href="tel:+919972321464" class="btn btn-primary">Book Now</a>
+          </div>
+          <button class="menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
     </div>
-    <nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="#hero">Home</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#services">Services</a></li>
-        <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <a class="cta-phone" href="tel:+919972321464">Call +91 99723 21464</a>
   </header>
 
   <main>
     <section class="hero" id="hero">
-      <div class="hero-media">
-        <div class="floating-circle circle-one"></div>
-        <div class="floating-circle circle-two"></div>
-        <div class="floating-circle circle-three"></div>
-        <img src="assets/images/hero.jpg" alt="Bridal makeover closeup" class="hero-bg" loading="lazy">
-      </div>
-      <div class="hero-content">
-        <img src="assets/images/logo.png" alt="Rahila Makeup Studio logo" class="hero-logo" loading="lazy">
-        <p class="eyebrow">Luxury Makeup Atelier</p>
-        <h1 class="hero-title">Professional Bridal &amp; Party Makeup</h1>
-        <p class="hero-subtitle">Enhancing your natural beauty with bespoke looks crafted for every celebration.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="portfolio.html">View Portfolio</a>
-          <a class="btn ghost" href="#contact">Book Appointment</a>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <span class="hero-badge">✨ Luxury Makeup Atelier</span>
+            <h1 class="hero-title">Professional Bridal & <span>Party Makeup</span></h1>
+            <p class="hero-desc">Transforming your natural beauty into stunning, camera-ready looks. From ethereal bridal glows to glamorous party makeovers.</p>
+            <div class="hero-actions">
+              <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+              <a href="#contact" class="btn btn-ghost">Book Appointment</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img src="assets/images/hero.jpg" alt="Bridal Makeup Transformation" />
+            </div>
+            <div class="hero-floating-card card-1">
+              <span>Bridal</span>
+              <strong>500+ Happy Brides</strong>
+            </div>
+            <div class="hero-floating-card card-2">
+              <span>Rating</span>
+              <strong>4.9 Stars</strong>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="about section reveal" id="about">
-      <div class="section-heading">
-        <span class="eyebrow">About</span>
-        <h2>Elegance, Precision, Confidence</h2>
-      </div>
-      <div class="about-grid">
-        <div class="card glass">
-          <h3>Luxury Craft</h3>
-          <p>Tailored bridal, engagement, and party looks using premium, skin-loving products for a flawless, enduring finish.</p>
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">About Us</span>
+          <h2 class="section-title">Elegance, Precision, Confidence</h2>
+          <p class="section-desc">Where artistry meets expertise to create your perfect look</p>
         </div>
-        <div class="card glass">
-          <h3>On-Location Service</h3>
-          <p>Serving Mumbai &amp; Thane with mobile studio convenience so you feel pampered wherever you are.</p>
-        </div>
-        <div class="card glass">
-          <h3>Signature Glow</h3>
-          <p>Soft glam to statement artistry, designed to photograph beautifully and stay fresh through every moment.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="services section reveal" id="services">
-      <div class="section-heading">
-        <span class="eyebrow">Services</span>
-        <h2>Bespoke Makeup Experiences</h2>
-      </div>
-      <div class="services-grid">
-        <article class="service-card glass">
-          <h3>Bridal Makeup</h3>
-          <p>Custom bridal looks with HD base, soft sculpt, and luminous details for ceremonies and receptions.</p>
-        </article>
-        <article class="service-card glass">
-          <h3>Engagement &amp; Sangeet</h3>
-          <p>Romantic glam with playful accents, ensuring every spotlight and candid captures your best angles.</p>
-        </article>
-        <article class="service-card glass">
-          <h3>Party &amp; Occasion</h3>
-          <p>Elevated, camera-ready looks for celebrations, soirées, and corporate events.</p>
-        </article>
-        <article class="service-card glass">
-          <h3>Photoshoot Makeup</h3>
-          <p>Editorial-inspired styling with long-wear techniques for studio and outdoor shoots.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="portfolio-preview section reveal" id="portfolio">
-      <div class="section-heading">
-        <span class="eyebrow">Portfolio</span>
-        <h2>Recent Transformations</h2>
-        <p>Timeless bridal classics and modern glam tailored to every skin tone and celebration.</p>
-      </div>
-      <div class="portfolio-grid">
-        <figure class="portfolio-item">
-          <img src="assets/images/portfolio1.jpg" alt="Bridal glam look" loading="lazy">
-          <figcaption>Bridal Look</figcaption>
-        </figure>
-        <figure class="portfolio-item">
-          <img src="assets/images/portfolio2.jpg" alt="Engagement makeup" loading="lazy">
-          <figcaption>Engagement Makeup</figcaption>
-        </figure>
-        <figure class="portfolio-item">
-          <img src="assets/images/portfolio3.jpg" alt="HD party makeup" loading="lazy">
-          <figcaption>HD Makeup</figcaption>
-        </figure>
-        <figure class="portfolio-item">
-          <img src="assets/images/portfolio4.jpg" alt="Royal bridal maroon look" loading="lazy">
-          <figcaption>Royal Bridal</figcaption>
-        </figure>
-        <figure class="portfolio-item">
-          <img src="assets/images/portfolio5.jpg" alt="Soft rose bridal transformation" loading="lazy">
-          <figcaption>Soft Glam</figcaption>
-        </figure>
-        <figure class="portfolio-item">
-          <img src="assets/images/portfolio6.jpg" alt="Bridal portrait closeup" loading="lazy">
-          <figcaption>Portrait Glow</figcaption>
-        </figure>
-      </div>
-      <div class="center">
-        <a class="btn primary" href="portfolio.html">Explore Full Gallery</a>
-      </div>
-    </section>
-
-    <section class="testimonials section reveal">
-      <div class="section-heading">
-        <span class="eyebrow">Testimonials</span>
-        <h2>Loved by Brides &amp; Celebrities</h2>
-      </div>
-      <div class="testimonial-grid">
-        <article class="testimonial-card glass">
-          <p>“Rahila created the exact ethereal bridal look I imagined. My makeup stayed flawless all night.”</p>
-          <span class="client">— Ayesha, Mumbai</span>
-        </article>
-        <article class="testimonial-card glass">
-          <p>“Professional, gentle with skin, and perfectly matched my undertone. Photos turned out stunning.”</p>
-          <span class="client">— Sana, Thane</span>
-        </article>
-        <article class="testimonial-card glass">
-          <p>“Booked for a destination shoot; the glow held up through humidity and travel. Highly recommend.”</p>
-          <span class="client">— Mehak, Goa</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="cta section reveal">
-      <div class="cta-card glass">
-        <div>
-          <p class="eyebrow">Book Now</p>
-          <h2>Let’s create your signature look</h2>
-          <p>Limited dates available for bridal &amp; premium events. Reserve your slot today.</p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn primary" href="tel:+919972321464">Call Now</a>
-          <a class="btn ghost" href="https://wa.me/919972321464" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">💄</div>
+            <h3>Luxury Craft</h3>
+            <p>Tailored bridal, engagement, and party looks using premium, skin-loving products for a flawless, enduring finish.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">📍</div>
+            <h3>On-Location Service</h3>
+            <p>Serving Mumbai & Thane with mobile studio convenience so you feel pampered wherever you are.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">✨</div>
+            <h3>Signature Glow</h3>
+            <p>Soft glam to statement artistry, designed to photograph beautifully and stay fresh through every moment.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="contact section reveal" id="contact">
-      <div class="section-heading">
-        <span class="eyebrow">Contact</span>
-        <h2>Visit the Studio</h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-card glass">
-          <h3>Rahila Makeup Studio</h3>
-          <p>Room No 605 6th Floor C-wing<br>Prerana Tower, Near Siddique Baug<br>Kismat Colony, Mumbra, Thane-400612<br>Maharashtra</p>
-          <a class="contact-link" href="tel:+919972321464">Call: +91 99723 21464</a>
-          <a class="contact-link" href="https://wa.me/919972321464" target="_blank" rel="noopener">Chat on WhatsApp</a>
-          <a class="contact-link" href="https://www.justdial.com/Thane/Rahila-Makeup-Studio-Near-Siddique-Baug-Mumbra/022PXX22-XX22-240909220637-G8B2_BZDET" target="_blank" rel="noopener">View us on Justdial</a>
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Our Services</span>
+          <h2 class="section-title">Bespoke Makeup Experiences</h2>
+          <p class="section-desc"> curated services for every occasion</p>
         </div>
-        <div class="map-wrapper glass">
-          <iframe title="Rahila Makeup Studio location" src="https://www.google.com/maps?q=Room+No+605+6th+Floor+C-wing+Prerana+Tower+Near+Siddique+Baug+Kismat+Colony+Mumbra,+Thane-400612,+Maharashtra&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-number">01</span>
+            <h3>Bridal Makeup</h3>
+            <p>Custom bridal looks with HD base, soft sculpt, and luminous details for ceremonies and receptions.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-number">02</span>
+            <h3>Engagement & Sangeet</h3>
+            <p>Romantic glam with playful accents, ensuring every spotlight and candid captures your best angles.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-number">03</span>
+            <h3>Party & Occasion</h3>
+            <p>Elevated, camera-ready looks for celebrations, soirées, and corporate events.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-number">04</span>
+            <h3>Photoshoot Makeup</h3>
+            <p>Editorial-inspired styling with long-wear techniques for studio and outdoor shoots.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Portfolio</span>
+          <h2 class="section-title">Recent Transformations</h2>
+          <p class="section-desc">Timeless bridal classics and modern glam tailored to every skin tone and celebration</p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio1.jpg" alt="Bridal glam look" loading="lazy" />
+            <div class="portfolio-overlay">
+              <h4>Bridal Look</h4>
+              <span>Bridal</span>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio2.jpg" alt="Engagement makeup" loading="lazy" />
+            <div class="portfolio-overlay">
+              <h4>Engagement Makeup</h4>
+              <span>Engagement</span>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio3.jpg" alt="HD party makeup" loading="lazy" />
+            <div class="portfolio-overlay">
+              <h4>HD Makeup</h4>
+              <span>HD</span>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio4.jpg" alt="Royal bridal look" loading="lazy" />
+            <div class="portfolio-overlay">
+              <h4>Royal Bridal</h4>
+              <span>Bridal</span>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio5.jpg" alt="Soft rose bridal" loading="lazy" />
+            <div class="portfolio-overlay">
+              <h4>Soft Glam</h4>
+              <span>Bridal</span>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio6.jpg" alt="Party glam" loading="lazy" />
+            <div class="portfolio-overlay">
+              <h4>Party Glam</h4>
+              <span>Party</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cta">
+          <a href="portfolio.html" class="btn btn-primary">Explore Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Testimonials</span>
+          <h2 class="section-title">Loved by Brides & Clients</h2>
+          <p class="section-desc">What our clients say about their experience</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Rahila created the exact ethereal bridal look I imagined. My makeup stayed flawless all night. Truly talented!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div class="testimonial-info">
+                <strong>Ayesha</strong>
+                <span>Mumbai</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Professional, gentle with skin, and perfectly matched my undertone. Photos turned out stunning!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S</div>
+              <div class="testimonial-info">
+                <strong>Sana</strong>
+                <span>Thane</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Booked for a destination shoot; the glow held up through humidity and travel. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div class="testimonial-info">
+                <strong>Mehak</strong>
+                <span>Goa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner">
+          <div class="cta-content">
+            <h2>Let's Create Your Signature Look</h2>
+            <p>Limited dates available for bridal & premium events. Reserve your slot today.</p>
+          </div>
+          <div class="cta-buttons">
+            <a href="tel:+919972321464" class="btn btn-primary">Call Now</a>
+            <a href="https://wa.me/919972321464" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Contact Us</span>
+          <h2 class="section-title">Visit the Studio</h2>
+          <p class="section-desc">We'd love to hear from you</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Rahila Makeup Studio</h3>
+            <ul class="contact-details">
+              <li>
+                <div class="contact-icon">📍</div>
+                <div>
+                  <strong>Studio Address</strong>
+                  <span>Room No 605 6th Floor C-wing<br>Prerana Tower, Near Siddique Baug<br>Kismat Colony, Mumbra, Thane-400612</span>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">📞</div>
+                <div>
+                  <strong>Phone</strong>
+                  <span>+91 99723 21464</span>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">💬</div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>+91 99723 21464</span>
+                </div>
+              </li>
+            </ul>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">📷</a>
+              <a href="#" class="social-link" aria-label="Facebook">📘</a>
+              <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+            </div>
+          </div>
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps?q=Room+No+605+6th+Floor+C-wing+Prerana+Tower+Near+Siddique+Baug+Kismat+Colony+Mumbra,+Thane-400612,+Maharashtra&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-brand">
-      <img src="assets/images/logo.png" alt="Rahila Makeup Studio logo" loading="lazy">
-      <div>
-        <p class="brand-name">Rahila Makeup Studio</p>
-        <p class="brand-contact">+91 99723 21464 • Mumbra, Thane</p>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Rahila Makeup Studio" style="width: 80px; border-radius: 50%;" />
+          <p>Rahila Makeup Studio - Enhancing your natural beauty with premium bridal and party makeup services in Mumbra, Thane.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919972321464">+91 99723 21464</a></li>
+            <li><a href="#">Mumbra, Thane</a></li>
+            <li><a href="https://wa.me/919972321464" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="footer-links">
-      <a href="#top">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://www.justdial.com/Thane/Rahila-Makeup-Studio-Near-Siddique-Baug-Mumbra/022PXX22-XX22-240909220637-G8B2_BZDET" target="_blank" rel="noopener">Justdial</a>
-    </div>
-    <div class="footer-copy">
-      <p>© 2026 Rahila Makeup Studio. All rights reserved.</p>
-      <div class="socials">
-        <span aria-label="Instagram">IG</span>
-        <span aria-label="Facebook">FB</span>
-        <span aria-label="YouTube">YT</span>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rahila Makeup Studio. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
-  <script src="script.js"></script>
+  <a href="#hero" class="back-to-top" aria-label="Back to top" style="position: fixed; bottom: 24px; right: 24px; width: 48px; height: 48px; background: linear-gradient(135deg, var(--rose-gold), var(--rose-gold-dark)); color: white; border-radius: 50%; display: grid; place-items: center; text-decoration: none; box-shadow: var(--shadow-medium); z-index: 999;">↑</a>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

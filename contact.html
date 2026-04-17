@@ -11,88 +11,156 @@
   <link rel="icon" href="assets/images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="top-nav inner" id="top">
-    <div class="nav-logo">
-      <img src="assets/images/logo.png" alt="Rahila Makeup Studio logo" loading="lazy">
-      <span>Rahila Makeup Studio</span>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Rahila Makeup Studio" />
+          <span class="logo-text">Rahila Makeup Studio</span>
+        </a>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html#hero" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="index.html#services" class="nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          </ul>
+          <div class="header-cta">
+            <a href="tel:+919972321464" class="btn btn-primary">Book Now</a>
+          </div>
+          <button class="menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
     </div>
-    <nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="index.html#hero">Home</a></li>
-        <li><a class="nav-link" href="index.html#services">Services</a></li>
-        <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li><a class="nav-link active" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <a class="cta-phone" href="tel:+919972321464">Call +91 99723 21464</a>
   </header>
 
-  <main class="page">
-    <section class="page-hero">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h1>We’d love to glam you up</h1>
-        <p>Call, WhatsApp, or visit the studio to discuss your perfect look.</p>
-        <div class="contact-actions">
-          <a class="btn primary" href="tel:+919972321464">Call Now</a>
-          <a class="btn ghost" href="https://wa.me/919972321464" target="_blank" rel="noopener">WhatsApp</a>
-        </div>
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow">Get in Touch</span>
+        <h1>Contact Us</h1>
+        <p>We'd love to glam you up. Reach out to discuss your perfect look.</p>
       </div>
     </section>
 
-    <section class="contact section">
-      <div class="contact-grid">
-        <div class="contact-card glass">
-          <h2>Rahila Makeup Studio</h2>
-          <p>Room No 605 6th Floor C-wing<br>Prerana Tower, Near Siddique Baug<br>Kismat Colony, Mumbra, Thane-400612<br>Maharashtra</p>
-          <p class="contact-links">
-            <a href="tel:+919972321464">Call: +91 99723 21464</a><br>
-            <a href="https://wa.me/919972321464" target="_blank" rel="noopener">Chat on WhatsApp</a><br>
-            <a href="https://www.justdial.com/Thane/Rahila-Makeup-Studio-Near-Siddique-Baug-Mumbra/022PXX22-XX22-240909220637-G8B2_BZDET" target="_blank" rel="noopener">View us on Justdial</a>
-          </p>
-          <div class="chips">
-            <span class="chip">Bridal</span>
-            <span class="chip">Engagement</span>
-            <span class="chip">Party</span>
-            <span class="chip">HD</span>
+    <section class="contact-page">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Rahila Makeup Studio</h3>
+            <ul class="contact-details">
+              <li>
+                <div class="contact-icon">📍</div>
+                <div>
+                  <strong>Studio Address</strong>
+                  <span>Room No 605 6th Floor C-wing<br>Prerana Tower, Near Siddique Baug<br>Kismat Colony, Mumbra, Thane-400612<br>Maharashtra</span>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">📞</div>
+                <div>
+                  <strong>Phone</strong>
+                  <span>+91 99723 21464</span>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">💬</div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>+91 99723 21464</span>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">🕐</div>
+                <div>
+                  <strong>Studio Hours</strong>
+                  <span>Mon - Sat: 10:00 AM - 8:00 PM<br>Sunday: By Appointment</span>
+                </div>
+              </li>
+            </ul>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">📷</a>
+              <a href="#" class="social-link" aria-label="Facebook">📘</a>
+              <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form class="contact-form">
+              <h3>Send us a Message</h3>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                  <option value="bridal">Bridal Makeup</option>
+                  <option value="engagement">Engagement & Sangeet</option>
+                  <option value="party">Party & Occasion</option>
+                  <option value="photoshoot">Photoshoot Makeup</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your event, date, and any special requirements..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
           </div>
         </div>
-        <div class="map-wrapper glass">
-          <iframe title="Rahila Makeup Studio location" src="https://www.google.com/maps?q=Room+No+605+6th+Floor+C-wing+Prerana+Tower+Near+Siddique+Baug+Kismat+Colony+Mumbra,+Thane-400612,+Maharashtra&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="contact-map" style="margin-top: 40px; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-soft);">
+          <iframe src="https://www.google.com/maps?q=Room+No+605+6th+Floor+C-wing+Prerana+Tower+Near+Siddique+Baug+Kismat+Colony+Mumbra,+Thane-400612,+Maharashtra&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen style="width: 100%; height: 400px; border: none;"></iframe>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-brand">
-      <img src="assets/images/logo.png" alt="Rahila Makeup Studio logo" loading="lazy">
-      <div>
-        <p class="brand-name">Rahila Makeup Studio</p>
-        <p class="brand-contact">+91 99723 21464 • Mumbra, Thane</p>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Rahila Makeup Studio" style="width: 80px; border-radius: 50%;" />
+          <p>Rahila Makeup Studio - Enhancing your natural beauty with premium bridal and party makeup services in Mumbra, Thane.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919972321464">+91 99723 21464</a></li>
+            <li><a href="#">Mumbra, Thane</a></li>
+            <li><a href="https://wa.me/919972321464" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="footer-links">
-      <a href="index.html#hero">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://www.justdial.com/Thane/Rahila-Makeup-Studio-Near-Siddique-Baug-Mumbra/022PXX22-XX22-240909220637-G8B2_BZDET" target="_blank" rel="noopener">Justdial</a>
-    </div>
-    <div class="footer-copy">
-      <p>© 2026 Rahila Makeup Studio. All rights reserved.</p>
-      <div class="socials">
-        <span aria-label="Instagram">IG</span>
-        <span aria-label="Facebook">FB</span>
-        <span aria-label="YouTube">YT</span>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rahila Makeup Studio. All rights reserved.</p>
       </div>
     </div>
   </footer>
-  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
-  <script src="script.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
