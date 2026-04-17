@@ -26,8 +26,17 @@ document.addEventListener('DOMContentLoaded', function() {
   if (menuToggle) {
     menuToggle.addEventListener('click', function() {
       navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('open');
     });
   }
+  
+  // Close menu when clicking a nav link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+      menuToggle.classList.remove('open');
+    });
+  });
   
   // Portfolio filters
   const filterBtns = document.querySelectorAll('.filter-btn');
